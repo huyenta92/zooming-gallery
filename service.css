@@ -1,0 +1,101 @@
+.loader {
+  display: none; }
+
+body {
+  height: 100vh; }
+
+svg {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 111; }
+
+.service-sec {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  will-change: transform; }
+  .service-sec .pin-sec-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative; }
+
+.bg-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; }
+  .bg-cover img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .bg-cover canvas {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.content {
+  position: fixed;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 111;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  pointer-events: none; }
+  .content .tag, .content .title, .content .desc {
+    color: #FFF;
+    text-align: center;
+    mix-blend-mode: difference;
+    max-width: 56.78049rem; }
+  .content .tag {
+    font-size: 2.34146rem;
+    font-style: italic;
+    font-weight: 600;
+    font-family: "Playfair Display", serif; }
+  .content .title {
+    font-size: 7.80488rem;
+    font-weight: 600; }
+  .content .desc {
+    font-size: 2.34146rem; }
+
+.hero_images {
+  -webkit-perspective: 300px;
+          perspective: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%; }
+  .hero_images .canvas-container {
+    position: absolute;
+    left: 40%;
+    right: 40%; }
